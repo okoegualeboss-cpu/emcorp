@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emcorp Limited</title>
+
+    <style>
+        /* --- GLOBAL STYLES --- */
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f2f6fa;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Smooth fade-in for all sections */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* --- HEADER --- */
+        header {
+            background-color: #c25401;
+            color: white;
+            padding: 30px 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        header img {
+            width: 120px;
+            margin-bottom: 15px;
+            animation: fadeIn 1.2s ease;
+        }
+
+        /* --- NAVIGATION --- */
+        nav {
+            background-color: #c25401;
+            padding: 12px 40px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: opacity 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+            transform: translateY(-2px);
+        }
+
+        /* --- SECTIONS --- */
+        section {
+            padding: 40px;
+            background: white;
+            margin: 30px auto;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #002d62;
+            margin-top: 0;
+        }
+
+        /* --- CONTACT FORM --- */
+        form input, form textarea {
+            width: 100%;
+            padding: 14px;
+            margin: 12px 0;
+            border-radius: 6px;
+            border: 1px solid #bbb;
+            font-size: 1em;
+            transition: border 0.3s;
+        }
+
+        form input:focus, form textarea:focus {
+            border: 1px solid #004d99;
+            outline: none;
+        }
+
+        form button {
+            background-color: #004d99;
+            color: white;
+            border: none;
+            padding: 14px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        form button:hover {
+            background-color: #003f7d;
+            transform: translateY(-2px);
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: #c25401;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="fade-in">
+    <!-- Replace the logo URL with your real company logo -->
+    <img src="https://via.placeholder.com/120x120?text=Logo" alt="Emcorp Logo">
+
+    <h1>Emcorp Limited</h1>
+    <p>Innovating Today for a Smarter Tomorrow</p>
+</header>
+
+<nav class="fade-in" style="animation-delay: 0.2s;">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about" class="fade-in" style="animation-delay: 0.3s;">
+    <h2>About Emcorp Limited</h2>
+    <p>
+        Emcorp Limited is a dynamic and innovative company specializing in investment, trading, and procurement services. We are committed to offering smart and strategic financial solutions to our clients by leveraging expertise and in-depth market knowledge. 
+    </p>
+    <p>
+        Our investment services focus on identifying high-growth opportunities, ensuring your capital works for you in the most efficient way possible. Our trading services are designed to connect you with the most lucrative and sustainable markets, while our procurement solutions provide cost-effective and reliable sourcing options for businesses across various industries.
+    </p>
+    <p>
+        At Emcorp Limited, we are dedicated to delivering excellence and fostering long-term partnerships based on trust, reliability, and proven success.
+    </p>
+</section>
+
+<section id="services" class="fade-in" style="animation-delay: 0.5s;">
+    <h2>Our Services</h2>
+    <ul>
+        <li>Investment Strategies & Portfolio Management</li>
+        <li>International Trading & Market Analysis</li>
+        <li>Procurement & Supply Chain Solutions</li>
+        <li>Business Consulting & Market Entry Strategies</li>
+        <li>Custom Financial & Risk Advisory Services</li>
+    </ul>
+</section>
+
+<section id="contact" class="fade-in" style="animation-delay: 0.7s;">
+    <h2>Contact Us</h2>
+    <p>Have questions or want to work with us? Send us a message below.</p>
+    
+    <form action="https://formspree.io/f/xrbwrryw" method="post">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Full Name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="email@example.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Type your message..." required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer class="fade-in" style="animation-delay: 1s;">
+    <p>© 2025 Emcorp Limited. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
